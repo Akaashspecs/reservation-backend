@@ -25,7 +25,9 @@ mongoose
 
 // Routes
 const bookingsRoute = require("./routes/booking");
+const contactRoute = require("./routes/contact");
 app.use("/api/bookings", bookingsRoute);
+app.use("/api/contacts", contactRoute);
 
 // Start Server
 const PORT = process.env.PORT || 4000;
